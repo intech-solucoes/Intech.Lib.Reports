@@ -83,30 +83,8 @@ body {
     margin: 0;
 }
 
-/*
- * NOTE: The element names here are made up to illustrate a concept.
- * As the renderer works with XML, you can use any XML valid element name.
- */
-page-after {
-    /* Most page elements only work on block or block-like elements. */
-    display: block;
-    /* Create a page break after this element. */
+page-break {
     page-break-after: always;
-}
-
-page-before {
-    display: block;
-    /* Create a page break before this element. */
-    page-break-before: always;
-}
-
-page-inside-avoid {
-    display: block;
-    height: 750px;
-    /* With page-break-inside the renderer will try (if possible) to
-     * avoid page breaks inside an element.
-     */
-    page-break-inside: avoid;
 }
 
 named-page {
